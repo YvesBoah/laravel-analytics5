@@ -1,3 +1,4 @@
+# only to be compatible with 5.6 and publishable in packagist :(
 #  Retrieve data from Google Analytics
 
 [![Latest Version](https://img.shields.io/github/release/spatie/laravel-analytics.svg?style=flat-square)](https://github.com/spatie/laravel-analytics/releases)
