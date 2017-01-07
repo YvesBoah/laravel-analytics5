@@ -31,8 +31,9 @@ class AnalyticsClient
      *
      * @return self
      */
-    public function setCacheLifeTimeInMinutes(int $cacheLifeTimeInMinutes)
+    public function setCacheLifeTimeInMinutes($cacheLifeTimeInMinutes)
     {
+
         $this->cacheLifeTimeInMinutes = $cacheLifeTimeInMinutes;
 
         return $this;
@@ -49,7 +50,7 @@ class AnalyticsClient
      *
      * @return array|null
      */
-    public function performQuery(string $viewId, DateTime $startDate, DateTime $endDate, string $metrics, array $others = [])
+    public function performQuery($viewId, DateTime $startDate, DateTime $endDate, $metrics, array $others = [])
     {
         $cacheName = $this->determineCacheName(func_get_args());
 
